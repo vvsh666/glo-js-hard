@@ -10,7 +10,5 @@ console.log(multiply);
 
 let exponent = multiply**3
 
-console.log(exponent)
-
 console.log(String(exponent).substring(0,2))
 

@@ -65,7 +65,7 @@ const getCurrentDate = function () {
 
     const getShortDate = function () {
         const d = (day < 10) ? '0' + day : day;
-        const m = (month < 10) ? '0' + month : month;
+        const m = (month < 10) ? '0' + (month + 1) : month + 1;
         const hh = (hours < 10) ? '0' + hours : hours;
         const mm = (minutes < 10) ? '0' + minutes : minutes;
         const ss = (seconds < 10) ? '0' + seconds : seconds;
@@ -79,9 +79,7 @@ const getCurrentDate = function () {
 }
 
 
-setInterval(() => {
-    getCurrentDate()
-}, 500)
+setInterval(getCurrentDate, 500)
 
 
 
